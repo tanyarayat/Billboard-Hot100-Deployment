@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Billboard Hot100 Prediction</title>
+        <link rel="stylesheet" href="/static/css/style5.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/artist">Check For Other Artist</a></li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="text-box">
+            <h1>PREDICTION RESULT </h1>
+            <p>{{prediction_text}}</p>
+            <br>
+            <form action="/artist">
+                <button type="redirect" class="hero-btn">Check Again</button>
+
+
+
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Billboard Hot100 Prediction</title>
+        <link rel="stylesheet" href="/static/css/style4.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+      
+
+    <form  action="{{ url_for('predict')}}" method="POST">
+
+      <div class="row">
+        <div class="column">
+          <div class="card"><img src={{output2[0]}} ><br>
+            <input type="radio" id="1" name="track" value=0>
+            <label for="1">{{output1[0]}}</label><br>
+          </div>
+          </div>
+            
+        
+        <div class="column">
+          <div class="card"><img src={{output2[1]}} ><br>
+            <input type="radio" id="2" name="track" value=1>
+            <label for="2">{{output1[1]}}</label><br>
+          </div>
+          </div>
+       
+          <div class="column">
+            <div class="card"><img src={{output2[2]}} ><br>
+              <input type="radio" id="3" name="track" value=2>
+              <label for="3">{{output1[2]}}</label><br>
+            </div>
+            </div>
+
+            <div class="column">
+              <div class="card"><img src={{output2[3]}} ><br>
+                <input type="radio" id="4" name="track" value=3>
+                <label for="4">{{output1[3]}}</label><br>
+              </div>
+              </div>
+            
+              <div class="column">
+                <div class="card"><img src={{output2[4]}} ><br>
+                  <input type="radio" id="2" name="track" value=4>
+                  <label for="5">{{output1[4]}}</label><br>
+                </div>
+                </div>
+              
+              <div class="column">
+                  <div class="card"><img src={{output2[5]}} ><br>
+                    <input type="radio" id="2" name="track" value=5>
+                    <label for="6">{{output1[5]}}</label><br>
+                  </div>
+                  </div>
+
+              <div class="column">
+                    <div class="card"><img src={{output2[6]}} ><br>
+                      <input type="radio" id="2" name="track" value=6>
+                      <label for="7">{{output1[6]}}</label><br>
+                    </div>
+                    </div>
+
+              <div class="column">
+                      <div class="card"><img src={{output2[7]}} ><br>
+                        <input type="radio" id="2" name="track" value=7>
+                        <label for="8">{{output1[7]}}</label><br>
+                      </div>
+                      </div>
+
+             
+                             
+      </div>
+    
+    
+    <button type="submit" class="btn" >Predict</button>
+
+  </form>
+    </div>
+    </section>
+    
+
+
+</body>
+</html>
+
+
+
+
+
